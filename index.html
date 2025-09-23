@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prithviraj — Portfolio</title>
+  <meta name="description" content="Portfolio of Prithviraj — web developer / designer. Projects, skills, contact." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Prithviraj</a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact">Hire Me</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Prithviraj</span></h1>
+          <p class="lead">A front-end developer who cooks websites(˶˃ ᵕ ˂˶)♡♡♡♡♡, responsive websites and interactive UI experiences.</p>
+          <p class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Contact</a>
+          </p>
+          <ul class="social">
+            <li><a href="https://github.com/PRITHVIRAJ2004?tab=repositories"target="_blank" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/prithvi-raj-700763276/" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+            
+          </ul>
+        </div>
+        <div class="hero-photo" aria-hidden="true">
+          <img src="images/avatar.png" alt="Your Name" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I build responsive websites focusing on accessibility, performance and clean design. Currently learning advanced JavaScript and modern frontend tooling.</p>
+        <div class="about-grid">
+          <div>
+            <h3>Experience</h3>
+            <p>Intern at HR Labs — Frontend intern working on real projects.</p>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <p>BCA — Currently 3rd year. Learning full-stack web development.</p>
+          </div>
+          <div>
+            <h3>Interests</h3>
+            <p>UI Design, JavaScript, Open Source, Game strategy guides (Clash of Clans).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- SKILLS -->
+<section id="skills" class="section skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <h4>HTML</h4>
+        <div class="meter" style="--pct:95%"><span>95%</span></div>
+      </div>
+      <div class="skill">
+        <h4>CSS</h4>
+        <div class="meter" style="--pct:90%"><span>90%</span></div>
+      </div>
+      <div class="skill">
+        <h4>Responsive Design</h4>
+        <div class="meter" style="--pct:92%"><span>92%</span></div>
+      </div>
+      <div class="skill">
+        <h4>Basic JavaScript</h4>
+        <div class="meter" style="--pct:70%"><span>70%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="images/12.png" alt="Project 1 screenshot" />
+            <div class="card-body">
+              <h3>Responsive Portfolio</h3>
+              <p>Built with HTML & CSS, responsive layout and animations. A clean starter portfolio template.</p>
+              <p class="project-links">
+                <a href="#" class="btn-sm">Live</a>
+                <a href="#" class="btn-sm btn-outline">Code</a>
+              </p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/13.png" alt="Project 2 screenshot" />
+            <div class="card-body">
+              <h3>Landing Page</h3>
+              <p>Modern landing page with responsive grid and hero section.</p>
+              <p class="project-links">
+                <a href="#" class="btn-sm">Live</a>
+                <a href="#" class="btn-sm btn-outline">Code</a>
+              </p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/14.png" alt="Project 3 screenshot" />
+            <div class="card-body">
+              <h3>UI Components</h3>
+              <p>Collection of reusable UI components: cards, buttons, forms (HTML/CSS).</p>
+              <p class="project-links">
+                <a href="#" class="btn-sm">Live</a>
+                <a href="#" class="btn-sm btn-outline">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to work together or have a question? Send a message.</p>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input type="text" id="name" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="email" name="email" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </label>
+          <p class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </p>
+        </form>
+
+        <h3>Saved Messages</h3>
+        <div id="savedMessages"></div>
+      </div>
+    </section>
+  
+    <!-- GITHUB FETCH PROJECT -->
+    <section id="github" class="section github">
+      <div class="container">
+        <h2>GitHub Profile Fetcher</h2>
+        <p>Enter a GitHub username to fetch profile details using the Fetch API.</p>
+        <form id="githubForm" class="contact-form" style="max-width:500px;">
+          <label>
+            <span>GitHub Username</span>
+            <input type="text" id="githubUser" required placeholder="e.g. octocat" />
+          </label>
+          <p class="form-actions">
+            <button type="submit" class="btn">Fetch</button>
+          </p>
+        </form>
+        <div id="githubResult" class="github-result"></div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="small-note">Built with ❤️ using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
